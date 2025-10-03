@@ -1,4 +1,4 @@
-package org.example;
+package org.example.behavioral;
 
 /*    Паттерн Цепочка обязанностей (Chain of Responsibility) - это поведенческий паттерн проектирования,
 который позволяет передавать запросы последовательно по цепочке обработчиков, пока один из них не обработает запрос.
@@ -82,7 +82,7 @@ class PurchaseRequest {
     }
 }
 
-public class Chain_Of_Responsibility {
+public class ChainOfResponsibility {
     public static void main(String[] args) {
         // Создаем цепочку обработчиков
         PurchaseHandler manager = new ManagerHandler();
@@ -107,3 +107,4 @@ public class Chain_Of_Responsibility {
 /*В этом примере три конкретных обработчика (ManagerHandler, DirectorHandler, CEOHandler) обрабатывают запросы на покупку в зависимости от суммы.
 Если текущий обработчик не может обработать запрос, он передает его следующему обработчику в цепочке.
 Таким образом, запрос проходит по всей цепочке до тех пор, пока не будет обработан.*/
+

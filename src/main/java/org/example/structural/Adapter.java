@@ -1,4 +1,4 @@
-package org.example;
+package org.example.structural;
 
 /*    Паттерн "Адаптер" (Adapter) относится к категории структурных паттернов проектирования и используется для соединения двух несовместимых интерфейсов.
 Адаптер обеспечивает совместимость между классами, которые иначе не могли бы работать вместе из-за несовместимости интерфейсов.
@@ -26,10 +26,10 @@ class ThirdPartyCalculator {
 }
 
 // Адаптер
-class Adapter implements SquareRootCalculator {
+class CalculatorAdapter implements SquareRootCalculator {
     private ThirdPartyCalculator calculator;
 
-    public Adapter(ThirdPartyCalculator calculator) {
+    public CalculatorAdapter(ThirdPartyCalculator calculator) {
         this.calculator = calculator;
     }
 
@@ -40,13 +40,13 @@ class Adapter implements SquareRootCalculator {
 }
 
 // Пример использования
-class Start {
+public class Adapter {
     public static void main(String[] args) {
         // Создание адаптируемого объекта
         ThirdPartyCalculator thirdPartyCalculator = new ThirdPartyCalculator();
 
         // Создание адаптера
-        SquareRootCalculator adapter = new Adapter(thirdPartyCalculator);
+        SquareRootCalculator adapter = new CalculatorAdapter(thirdPartyCalculator);
 
         // Вызов метода через адаптер
         double result = adapter.calculateSquareRoot(16);
@@ -54,6 +54,7 @@ class Start {
     }
 }
 /*
-    В этом примере Adapter является адаптером для ThirdPartyCalculator, который предоставляет функциональность по расчету квадратного корня.
-Adapter реализует интерфейс SquareRootCalculator и преобразует вызовы методов из этого интерфейса в вызовы методов calculateRoot() адаптируемого класса.
+    В этом примере CalculatorAdapter является адаптером для ThirdPartyCalculator, который предоставляет функциональность по расчету квадратного корня.
+Адаптер реализует интерфейс SquareRootCalculator и преобразует вызовы методов из этого интерфейса в вызовы методов calculateRoot() адаптируемого класса.
 Таким образом, клиентский код может использовать интерфейс SquareRootCalculator, не зная о реализации ThirdPartyCalculator.*/
+

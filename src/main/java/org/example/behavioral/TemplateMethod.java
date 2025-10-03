@@ -1,4 +1,4 @@
-package org.example;
+package org.example.behavioral; 
 
 /*   Шаблонный метод (Template Method) - это паттерн проектирования, который определяет скелет алгоритма в суперклассе,
 оставляя реализацию некоторых шагов алгоритма подклассам. Таким образом, он позволяет подклассам переопределять конкретные
@@ -46,4 +46,3 @@ public class Template_Method {
         Algorithm algorithm = new ConcreteAlgorithm();
         algorithm.execute();
     }
-}

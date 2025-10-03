@@ -1,4 +1,4 @@
-package org.example;
+package org.example.creational;
 
 /*    Паттерн "Абстрактная фабрика" (Abstract Factory) относится к категории порождающих паттернов проектирования и предоставляет интерфейс
 для создания семейств взаимосвязанных или взаимозависимых объектов без указания их конкретных классов. Этот паттерн предоставляет абстрактную фабрику,
@@ -78,25 +78,30 @@ class VictorianSofa implements Sofa {
 }
 
 // Пример использования абстрактной фабрики
-public class Abstract_Factory {
-    private FurnitureFactory factory;
-
-    public Abstract_Factory(FurnitureFactory factory) {
-        this.factory = factory;
-    }
-
-    public void sitOnChair() {
-        Chair chair = factory.createChair();
-        chair.sitOn();
-    }
-
-    public void lieOnSofa() {
-        Sofa sofa = factory.createSofa();
-        sofa.lieOn();
+public class AbstractFactory {
+    public static void main(String[] args) {
+        // Создаем фабрику мебели в стиле модерн
+        FurnitureFactory modernFactory = new ModernFurnitureFactory();
+        Chair modernChair = modernFactory.createChair();
+        Sofa modernSofa = modernFactory.createSofa();
+        
+        modernChair.sitOn();
+        modernSofa.lieOn();
+        
+        System.out.println();
+        
+        // Создаем фабрику мебели в викторианском стиле
+        FurnitureFactory victorianFactory = new VictorianFurnitureFactory();
+        Chair victorianChair = victorianFactory.createChair();
+        Sofa victorianSofa = victorianFactory.createSofa();
+        
+        victorianChair.sitOn();
+        victorianSofa.lieOn();
     }
 }
 /*
     В этом примере FurnitureFactory - это абстрактная фабрика, которая определяет методы создания мебельных объектов.
 ModernFurnitureFactory и VictorianFurnitureFactory - это конкретные фабрики, которые реализуют этот интерфейс и создают
-объекты определенного стиля мебели. Клиентский код, представленный классом FurnitureShop, использует абстрактную фабрику
+объекты определенного стиля мебели. Клиентский код использует абстрактную фабрику
 для создания мебельных объектов без указания их конкретных классов.*/
+
