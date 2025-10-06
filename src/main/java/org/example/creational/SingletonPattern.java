@@ -5,8 +5,8 @@ package org.example.creational;
 
         Реализация паттерна Singleton в Java:*/
 
-// Пример использования
-public class Singleton {
+// Класс Singleton
+class Singleton {
     // Приватное статическое поле для хранения единственного экземпляра класса
     private static Singleton instance;
 
@@ -28,7 +28,10 @@ public class Singleton {
     public void someMethod() {
         System.out.println("Executing some method");
     }
-    
+}
+
+// Пример использования
+public class SingletonPattern {
     public static void main(String[] args) {
         // Получение экземпляра Singleton
         Singleton singleton1 = Singleton.getInstance();

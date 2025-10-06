@@ -81,7 +81,7 @@ class Folder implements FileSystemComponent {
 }
 
 // Пример использования
-public class Composite {
+public class CompositePattern {
     public static void main(String[] args) {
         // Создаем файлы
         File file1 = new File("Document.txt", 10);

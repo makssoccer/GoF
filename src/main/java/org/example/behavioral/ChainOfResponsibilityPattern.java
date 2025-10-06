@@ -82,7 +82,7 @@ class PurchaseRequest {
     }
 }
 
-public class ChainOfResponsibility {
+public class ChainOfResponsibilityPattern {
     public static void main(String[] args) {
         // Создаем цепочку обработчиков
         PurchaseHandler manager = new ManagerHandler();

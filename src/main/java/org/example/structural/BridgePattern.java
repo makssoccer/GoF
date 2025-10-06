@@ -109,7 +109,7 @@ class AdvancedRemote extends RemoteControl {
 }
 
 // Пример использования
-public class Bridge {
+public class BridgePattern {
     public static void main(String[] args) {
         // Телевизор с обычным пультом
         Device tv = new TV();

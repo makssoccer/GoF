@@ -41,8 +41,9 @@ class ConcreteAlgorithm extends Algorithm {
     }
 }
 
-public class Template_Method {
+public class TemplateMethodPattern {
     public static void main(String[] args) {
         Algorithm algorithm = new ConcreteAlgorithm();
         algorithm.execute();
     }
+}

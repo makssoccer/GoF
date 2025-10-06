@@ -43,7 +43,7 @@ class ConcretePrototype implements PrototypeInterface {
 }
 
 // Пример использования
-public class Prototype {
+public class PrototypePattern {
     public static void main(String[] args) {
         // Создание прототипа
         ConcretePrototype prototype = new ConcretePrototype(10);

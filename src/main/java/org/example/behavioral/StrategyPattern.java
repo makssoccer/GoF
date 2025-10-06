@@ -56,7 +56,7 @@ interface SortingStrategy {
 }
 
 // Демонстрация использования паттерна Стратегия
-public class Strategy {
+public class StrategyPattern {
     public static void main(String[] args) {
         SortedArray array = new SortedArray(new BubbleSortStrategy());
         array.sort(new int[]{1, 3, 2});

@@ -68,7 +68,7 @@ class ChocolateDecorator implements Coffee {
 }
 
 // Пример использования
-public class Decorator {
+public class DecoratorPattern {
     public static void main(String[] args) {
         // Простой кофе
         Coffee coffee = new SimpleCoffee();

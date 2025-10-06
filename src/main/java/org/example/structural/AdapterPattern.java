@@ -40,7 +40,7 @@ class CalculatorAdapter implements SquareRootCalculator {
 }
 
 // Пример использования
-public class Adapter {
+public class AdapterPattern {
     public static void main(String[] args) {
         // Создание адаптируемого объекта
         ThirdPartyCalculator thirdPartyCalculator = new ThirdPartyCalculator();

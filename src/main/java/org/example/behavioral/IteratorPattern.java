@@ -63,7 +63,7 @@ class ArrayCollection<T> implements Collection<T> {
 }
 
 // Пример использования
-public class IteratorExample {
+public class IteratorPattern {
     public static void main(String[] args) {
         Integer[] array = {1, 2, 3, 4, 5};
         Collection<Integer> collection = new ArrayCollection<>(array);

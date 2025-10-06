@@ -57,7 +57,7 @@ class ProxyImage implements Image {
 }
 
 // Пример использования
-public class Proxy {
+public class ProxyPattern {
     public static void main(String[] args) {
         // Создание прокси-объекта
         Image image = new ProxyImage("test.jpg");

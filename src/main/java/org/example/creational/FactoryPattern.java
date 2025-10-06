@@ -45,7 +45,7 @@ class ShapeFactory {
 }
 
 // Пример использования
-public class Factory {
+public class FactoryPattern {
     public static void main(String[] args) {
         ShapeFactory factory = new ShapeFactory();
 

@@ -117,7 +117,7 @@ class EditorHistory {
 }
 
 // Пример использования
-public class Memento {
+public class MementoPattern {
     public static void main(String[] args) {
         TextEditor editor = new TextEditor();
         EditorHistory history = new EditorHistory();

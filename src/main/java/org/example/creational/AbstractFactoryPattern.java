@@ -78,7 +78,7 @@ class VictorianSofa implements Sofa {
 }
 
 // Пример использования абстрактной фабрики
-public class AbstractFactory {
+public class AbstractFactoryPattern {
     public static void main(String[] args) {
         // Создаем фабрику мебели в стиле модерн
         FurnitureFactory modernFactory = new ModernFurnitureFactory();

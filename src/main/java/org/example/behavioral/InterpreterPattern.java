@@ -57,7 +57,7 @@ class Context {
 }
 
 // Пример использования
-public class Interpreter {
+public class InterpreterPattern {
     public static void main(String[] args) {
         // Создание выражений
         Expression expression = new AddExpression(new NumberExpression(10), new NumberExpression(5));

@@ -204,7 +204,7 @@ class VendingMachine {
 }
 
 // Пример использования
-public class State {
+public class StatePattern {
     public static void main(String[] args) {
         System.out.println("=== Vending Machine with 3 products ===\n");
         VendingMachine machine = new VendingMachine(3);

@@ -79,7 +79,7 @@ class ConcreteUser extends User {
 }
 
 // Пример использования
-public class Mediator {
+public class MediatorPattern {
     public static void main(String[] args) {
         // Создаем посредника
         ChatMediator chatRoom = new ChatRoom();

@@ -105,7 +105,7 @@ class Forest {
 }
 
 // Пример использования
-public class Flyweight {
+public class FlyweightPattern {
     public static void main(String[] args) {
         Forest forest = new Forest();
 

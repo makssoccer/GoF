@@ -141,7 +141,7 @@ class RemoteController {
 }
 
 // Пример использования
-public class CommandExample {
+public class CommandPattern {
     public static void main(String[] args) {
         // Создаем получателей
         Light livingRoomLight = new Light("Living Room");

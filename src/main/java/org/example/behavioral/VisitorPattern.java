@@ -185,7 +185,7 @@ class DisplayVisitor implements ComputerPartVisitor {
 }
 
 // Пример использования
-public class Visitor {
+public class VisitorPattern {
     public static void main(String[] args) {
         Computer computer = new Computer();
 
